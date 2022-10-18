@@ -33,9 +33,9 @@ const PostPreview = ({
           </Link>
         </h3>
         <div className="flex flex-row">
-          <Avatar name={author.name} picture={author.picture} />
+          {/* <Avatar name={author.writer} picture={author.picture} /> */}
           <div className="font-bold text-xs my-auto mx-2">
-            <DateFormatter dateString={date} />
+            {/* <DateFormatter dateString={date} /> */}
           </div>
         </div>
       </div>

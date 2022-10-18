@@ -20,7 +20,11 @@ const PostHeader = ({ title, coverImage, date, author, tags }: Props) => {
         <Avatar name={author.name} picture={author.picture} />
       </div>
       <ul className="flex gap-x-2">
-      tags.map((tag) => <li className="font-bold mb-12"><a href={`/tags/${tag}`}>{tag}</a></li>)
+        {tags.map((tag) => (
+          <li className="font-bold mb-12">
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </li>
+        ))}
       </ul>
       <div className="mb-8 md:mb-16 sm:mx-0">
         <CoverImage title={title} src={coverImage} />
